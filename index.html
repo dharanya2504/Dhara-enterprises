@@ -600,6 +600,20 @@
             color: rgba(42, 26, 18, .55);
             letter-spacing: .3px;
             border-bottom: 1px dashed rgba(42, 26, 18, .25);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .m-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .4s ease;
+        }
+
+        .m-card:hover .m-photo img {
+            transform: scale(1.06);
         }
 
         .m1 {
@@ -980,21 +994,27 @@
             <h2>Made for every kind of morning.</h2>
             <div class="m-grid">
                 <div class="m-card">
-                    <div class="m-photo m1">Photo space</div>
+                    <div class="m-photo m1">
+                        <img src="images/rush.jpg" alt="The rush - quick morning coffee" loading="lazy">
+                    </div>
                     <div class="m-body">
                         <h3>The rush</h3>
                         <p>Late again? A proper cup is still only three seconds away.</p>
                     </div>
                 </div>
                 <div class="m-card">
-                    <div class="m-photo m2">Photo space</div>
+                    <div class="m-photo m2">
+                        <img src="images/desk-break.jpg" alt="The desk break - afternoon coffee at desk" loading="lazy">
+                    </div>
                     <div class="m-body">
                         <h3>The desk break</h3>
                         <p>Reset your afternoon with something warm, rich and comforting.</p>
                     </div>
                 </div>
                 <div class="m-card">
-                    <div class="m-photo m3">Photo space</div>
+                    <div class="m-photo m3">
+                        <img src="images/slow-evening.jpg" alt="The slow evening - chocolate, coffee and a book" loading="lazy">
+                    </div>
                     <div class="m-body">
                         <h3>The slow evening</h3>
                         <p>Chocolate or caramel, a good book, and nowhere else to be.</p>
